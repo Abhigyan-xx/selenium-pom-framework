@@ -13,10 +13,11 @@ public class LoginTest extends BaseTest {
 
         System.out.println("Page Title: " + driver.getTitle());
 
-        loginPage.login("abhigyan.shukla@finconic.com", "delhi@12345");
+        loginPage.loginAndExtractAllPanData(
+                "abhigyan.shukla@finconic.com",
+                "delhi@12345"
+        );
 
-        System.out.println("Login button clicked successfully.");
+        System.out.println("Login and PAN entity extraction completed successfully.");
     }
-
-
 }
