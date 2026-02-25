@@ -12,17 +12,11 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
 
-        String browser = com.project.utils.ConfigReader.getProperty("browser");
-        String url = com.project.utils.ConfigReader.getProperty("url");
+        String browser = com.Project.utils.ConfigReader.getProperty("browser");
+        String url = com.Project.utils.ConfigReader.getProperty("url");
 
         driver = DriverFactory.initDriver(browser);
         driver.get(url);
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
 }
