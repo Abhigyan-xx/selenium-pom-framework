@@ -17,6 +17,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+        // this method is connecting the driver to this page behaviour
     }
 
     public void clickLoginLink() {
