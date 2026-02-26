@@ -1,6 +1,7 @@
 package com.Project.Pages;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
@@ -8,7 +9,8 @@ import java.util.*;
 
 public class LoginPage {
 
-    private WebDriver driver;
+//    private WebDriver driver;
+    WebDriver driver = new ChromeDriver();
 
     // Locators
     private By loginLink = By.xpath("//*[@id=\"root\"]/div/div/div/button");
